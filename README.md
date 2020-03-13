@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The DOM is a tree of objects in the form of the structure of your website with the document at the top of the tree and the most inner nested elements at the bottom of the tree. This tree and its elements attributes can be changed using our script files. For example we can create new elements and place them where ever we want them in the tree using document.createElement() and then appending them to the desired parent element using prepend(), append(), or appendChild(). We can also access an element's style if we want to change it with the formulation element.style.name_of_style and assigning a new value to it in quotes.
+
 2. What is an event?
+
+An event is when the browser lets our code know that the user has done some action that we might want to be aware of and have our JavaScript code react to. It then activates any event listeners by capturing the target first and then bubbling to the elements in which the target is nested. This means that the target's event listeners will be activated first and the outermost element in which the target is nested will have its event listeners activated last.
 
 3. What is an event listener?
 
+An eventListener is a DOM method that detects a user's specific interaction with a specific part of the website and runs a function given to it as a second parameter when that interaction takes place. 
+
 4. Why would we convert a NodeList into an Array?
 
+We change NodeLists into arrays so that we can use array methods such as map and forEach to iterate through them.
+
 5. What is a component?
+
+A component is a functon or class (although we have only worked with functional components thus far) that allows the developer to create a block of website content's inner elements, element properties, structure, and behaviors in a way that is reusable. They are used to avoid code repetition.
 
 ### Git Set up
 
